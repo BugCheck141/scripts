@@ -1,0 +1,4 @@
+//thx microsoft!
+net stop winnat
+net start winnat
+netsh int ipv4 add excludedportrange protocol=tcp startport=6942 numberofports=50
