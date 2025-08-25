@@ -2,7 +2,7 @@
 
 ## Download
 
-Microsoft.DesktopAppInstaller.*.msixbundle from https://github.com/microsoft/winget-cli/releases
+Microsoft.DesktopAppInstaller.*.msixbundle and _License1.xml from https://github.com/microsoft/winget-cli/releases
 
 tools\Appx\x64\Release\Microsoft.UI.Xaml.*.appx from https://www.nuget.org/packages/Microsoft.UI.Xaml/
 
@@ -14,7 +14,7 @@ add-appxpackage -Path \<path to Microsoft.VCLib.appx\>
 
 add-appxpackage -Path \<path to Microsoft.UI.Xaml.appx\>
 
-add-appxpackage -Path \<path to wincli Microsoft.DesktopAppInstaller.msixbundle\>
+Add-AppxProvisionedPackage -Online -PackagePath \<path to wincli Microsoft.DesktopAppInstaller.msixbundle\> -LicensePath \<path to _License1.xml\> -Verbose
 
 ## Troubleshoot
 
