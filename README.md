@@ -1,6 +1,13 @@
 # scripts
 useful scripts
 
+## powershell
+|Description|Command|
+|-------------|-----|
+|unblock all file|`Get-ChildItem -Recurse \| Unblock-File`|
+|Long Path Support|`Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -Type DWord`|
+
+
 ## conda
 |Description|Command|
 |-------------|-----|
@@ -18,3 +25,4 @@ useful scripts
 |Description|Command|
 |-------------|-----|
 |start new open-wenui docker|`docker run -d -p 3000:8080 -v open-webui:/app/backend/data --add-host=host.docker.internal:host-gateway --restart always ghcr.io/open-webui/open-webui:main`|
+
