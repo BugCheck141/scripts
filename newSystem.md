@@ -1,0 +1,1 @@
+winget install --exact --id Microsoft.VCRedist.2010.x64 Microsoft.VCRedist.2013.x64 Microsoft.VCRedist.2015+.x86 Microsoft.VCRedist.2015+.x64 7zip.7zip Mozilla.Firefox GlavSoft.TightVNC Microsoft.VisualStudioCode
